@@ -1,0 +1,17 @@
+._container {
+    max-width: 1046px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+._ibg {
+    position: relative;
+    & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
