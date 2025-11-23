@@ -24,7 +24,7 @@ import {images} from "./gulp/tasks/images.js";
 import {webpConvert} from "./gulp/tasks/webp.js";
 import {svg} from "./gulp/tasks/svg.js"
 import {otfToTtf, ttfToWoff, fontsStyle} from "./gulp/tasks/fonts.js"
-import {svgSprive} from "./gulp/tasks/svgSprive.js"
+import {svgSprite} from "./gulp/tasks/svgSprite.js"
 import {zip} from "./gulp/tasks/zip.js"
 import {ftp} from "./gulp/tasks/ftp.js"
 
@@ -38,8 +38,6 @@ function watcher() {
     gulp.watch(path.watch.images, images);
     gulp.watch(path.watch.svg, svg)
 }
-
-export { svgSprive }
 
 // последовательная обработка шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
@@ -58,6 +56,7 @@ export {dev}
 export {build}
 export {deployZip}
 export {deployFTP}
+export {svgSprite}
 
 // выполнение сценария по умолчанию
 gulp.task('default', dev);
