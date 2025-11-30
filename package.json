@@ -9,7 +9,7 @@
     "build": "gulp build --build",
     "zip": "gulp deployZip --build",
     "deploy": "gulp deployFTP --build",
-    "svgSprite": "gulp svgSprite"
+    "svgSprite": "gulp svgSprive"
   },
   "author": "",
   "license": "ISC",
