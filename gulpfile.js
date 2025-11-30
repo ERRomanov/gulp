@@ -24,7 +24,7 @@ import {images} from "./gulp/tasks/images.js";
 import {webpConvert} from "./gulp/tasks/webp.js";
 import {svg} from "./gulp/tasks/svg.js"
 import {otfToTtf, ttfToWoff, fontsStyle} from "./gulp/tasks/fonts.js"
-import {svgSprite} from "./gulp/tasks/svgSprite.js"
+import {svgSprive} from "./gulp/tasks/svgSprive.js"
 import {zip} from "./gulp/tasks/zip.js"
 import {ftp} from "./gulp/tasks/ftp.js"
 
@@ -56,7 +56,7 @@ export {dev}
 export {build}
 export {deployZip}
 export {deployFTP}
-export {svgSprite}
+export {svgSprive}
 
 // выполнение сценария по умолчанию
 gulp.task('default', dev);
