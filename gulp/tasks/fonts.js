@@ -71,7 +71,6 @@ export const fontsStyle = () => {
             let fontFace = `@font-face {\n\tfont-family: "${fontFamily}";\n\tfont-display: swap;\n\tsrc: url("../fonts/${fontName}.woff2") format("woff2");\n\tfont-weight: 100 900;\n\tfont-stretch: 75% 125%;\n\tfont-style: ${isItalic ? 'italic' : 'normal'};\n}\n\n`;
             
             fs.appendFileSync(fontsFile, fontFace);
-            console.log(`✓ ${fontName} -> "${fontFamily}" [Variable Font]`);
             createdCount++;
         });
     });
